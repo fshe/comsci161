@@ -1,0 +1,66 @@
+;check pos
+;s is one row
+(defun checkPos (s col)  
+  (cond ((= col 0) (= 1 (car s)))
+        (t (checkPos (cdr s) (- col 1)))
+  );end cond
+);defun
+
+;check column
+;s is the state of the chessboard, row is the number of rows, column is the column to check
+(defun checkCol (s row col)
+  (cond ((= row 0) t)
+        (t checkPos (car s) col)
+  );end cond
+);end defun
+
+;check diagonal
+(defun checkDiag (s row)
+  
+);end defun
+
+;check for Constraints
+(defun checkConstraint (s row col)
+  
+);end defun
+
+;make the newState, placing the queen somewhere
+;can clear a row, or place a queen in the ro
+(defun changeState (s row col) 
+  (cond ((= row 0) )
+);end defun
+
+;return the column position that the queen is at, 0 if none
+(defun checkRow (s col)
+
+);end defun
+
+;find the queen's position, given the row to search in
+(defun findQueen (s row)
+  (cond ((= row 1) (checkRow (car s) 1) 
+    (t (findQueen (cdr s) (- row 1)))
+  );end cond
+);end defun
+
+;depth-first-search solution
+(defun placeQueen (s row col)
+  (let (newS (changeState s row col))
+  (cond ((= row 0) s)
+  		((= col 0) nil)
+  		((> col (length (car s))) (placeQueen (changeState s 0 0) (+ 1 row) (+ 1 (findQueen s (+ 1 row))) ;clear the current row, grab the queens pos in the row one higher, and try again 
+      ((> row (length (car s))) nil)
+  		((checkConstraint newS) (placeQueen newS (- row 1) 1))
+  		(t (placeQueen s row (+ col 1)))
+  );end cond
+  );end let
+); defun
+
+;top level function for solving the n-queens problem
+(defun QUEENS (N)
+  (cond ((= 1 N) (list 1));trivial case
+        ((= 2 N) nil)
+        (t (let (s (construct-list N))
+                (placeQueen s N 1)))
+  );end cond
+);end defun
+

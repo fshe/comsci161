@@ -1,0 +1,50 @@
+<SamiamPreferences>
+	<DefaultPath>C:\Users\Flood\Downloads</DefaultPath>
+	<FileExtension>.net</FileExtension>
+	<SecondsPerRCCall>2.018421361862025E-6</SecondsPerRCCall>
+	<RecentDocuments>C:\Users\Flood\Downloads\sambot.net;C:\Users\Flood\Downloads\test.net;C:\Users\Flood\Downloads\sambot (1).net;C:\Users\Flood\Downloads\test (1).net;</RecentDocuments>
+	<Algorithm>rcenginegenerator1317510038576835557L</Algorithm>
+	<PreferenceGroup name="Tree">
+		<edu.ucla.belief.ui.preference.ColorPreference key="manualClr" value="255,0,0" name="Observed evidence color" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="warnClr" value="255,175,175" name="Computation in progress color" />
+		<edu.ucla.belief.ui.preference.BooleanPreference key="showTargetProbabilities" value="true" name="Show target probabilities" />
+		<edu.ucla.belief.ui.preference.BooleanPreference key="showAuxiliaryProbabilities" value="false" name="Show auxiliary probabilities" />
+		<edu.ucla.belief.ui.preference.BooleanPreference key="showObservationProbabilities" value="false" name="Show observation probabilities" />
+		<edu.ucla.belief.ui.preference.ObjectPreference key="treeSortDefault" value="in-outdegree" name="Sort by (default)" />
+	</PreferenceGroup>
+	<PreferenceGroup name="Network">
+		<edu.ucla.belief.ui.preference.ColorPreference key="netBkgdClr" value="192,192,192" name="Network background color (compiled)" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="netBkgdClrNeedsCompile" value="150,127,143" name="Network background color (needs compile)" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="nodeBorderClr" value="0,0,0" name="Node border color" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="nodeBorderClrObserved" value="255,0,0" name="Node border color (observed)" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="nodeBkgndClr" value="255,200,0" name="Node background color" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="nodeTextClr" value="0,0,255" name="Node text color" />
+		<edu.ucla.belief.ui.preference.DimensionPreference key="nodeDefaultSize" value="80,40" name="Default node size" />
+		<edu.ucla.belief.ui.preference.BooleanPreference key="netSizeOverRidesPrefs" value="true" name="Use size in network file if available" />
+		<edu.ucla.belief.ui.preference.DoublePreference key="nodeNormalStroke" value="1.0" name="Node border width (unselected)" />
+		<edu.ucla.belief.ui.preference.DoublePreference key="nodeObservedStroke" value="3.0" name="Node border width (observed)" />
+		<edu.ucla.belief.ui.preference.DoublePreference key="nodeWideStroke" value="5.0" name="Node border width (selected)" />
+		<edu.ucla.belief.ui.preference.DimensionPreference key="edgeArrowTipSize" value="10,6" name="Arrow tip size" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="edgeClr" value="0,0,0" name="Edge color" />
+		<edu.ucla.belief.ui.preference.DoublePreference key="arrowStroke" value="1.0" name="Edge width" />
+	</PreferenceGroup>
+	<PreferenceGroup name="Monitors">
+		<edu.ucla.belief.ui.preference.ColorPreference key="evidDlgManualClr" value="255,0,0" name="Observed evidence color" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="evidDlgWarnClr" value="255,175,175" name="Computation in progress color" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="evidDlgAutoClr" value="0,255,0" name="Unobserved color" />
+		<edu.ucla.belief.ui.preference.DimensionPreference key="evidDlgRectSize" value="25,12" name="Evidence bar size" />
+		<edu.ucla.belief.ui.preference.ColorPreference key="evidDlgTextClr" value="0,0,255" name="Text color" />
+		<edu.ucla.belief.ui.preference.ObjectPreference key="evidDlgView" value="percentage" name="View" />
+		<edu.ucla.belief.ui.preference.IntegerPreference key="evidDlgMinimumFractionDigits" value="2" name="Probability precision" />
+		<edu.ucla.belief.ui.preference.BooleanPreference key="evidDlgZooms" value="false" name="Zoom with network*" />
+		<edu.ucla.belief.ui.preference.DoublePreference key="evidDlgZoomFactor" value="100.0" name="Zoom % (* not checked)" />
+	</PreferenceGroup>
+	<PreferenceGroup name="Global">
+		<edu.ucla.belief.ui.preference.BooleanPreference key="displayNodeLabelIfAvail" value="true" name="Show node labels instead of identifiers (if available)" />
+		<edu.ucla.belief.ui.preference.BooleanPreference key="autoCalculatePrE" value="true" name="Show Pr(e) in status bar" />
+		<edu.ucla.belief.ui.preference.IntegerPreference key="statusBarPointSize" value="10" name="Status bar point size" />
+		<edu.ucla.belief.ui.preference.ObjectPreference key="lookAndFeelClassName" value="com.sun.java.swing.plaf.windows.WindowsLookAndFeel" name="User interface look and feel" />
+		<edu.ucla.belief.ui.preference.IntegerPreference key="maxRecentDocuments" value="4" name="Maximum recent documents in File menu" />
+		<edu.ucla.belief.ui.preference.BooleanPreference key="autoCPTInvalid" value="false" name="Automatically invalidate CPTs" />
+	</PreferenceGroup>
+</SamiamPreferences>
